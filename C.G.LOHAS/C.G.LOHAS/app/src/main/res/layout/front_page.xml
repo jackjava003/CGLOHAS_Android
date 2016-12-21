@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/front_page">
+
+
+
+
+    <Button
+        android:text="LogOut"
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LogOutButton" />
+    <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoginButton" />
+    <Button
+        android:text="Register now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Register"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SKIP"
+        android:id="@+id/Skip"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="75dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:gravity="right"/>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    tools:context="._04_listItems.ItemFragment"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/rvItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/basket_add_icon"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/cartlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#50000000">
+        <ImageView
+            android:id="@+id/cartIcon"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_buy"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:id="@+id/flCount">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:textAlignment="center"
+            android:text="0"
+            android:textSize="14sp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:id="@+id/showCount"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/TotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/flCount"
+            android:textSize="20sp"
+            android:textColor="#FF0000"
+            android:layout_marginLeft="40dp"
+            android:text="@string/totalPrice"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

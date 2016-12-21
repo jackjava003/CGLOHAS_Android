@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e7ffc4"
+        android:padding="6dp"
+        tools:context="._07_Shop.ShopFragment">
+
+        <TextView
+            android:id="@+id/tvShops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/text_Shops"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/shopDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvShops"
+            android:textAlignment="center"
+            android:text="Store Info"
+            android:textSize="18sp" />
+
+        <fragment
+            android:id="@+id/fmMap"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/shopDesc" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvShops"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/fmMap"
+            android:layout_marginTop="12dp" />
+    </RelativeLayout>
+</ScrollView>

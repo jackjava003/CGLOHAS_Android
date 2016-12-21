@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item_Home"
+            android:checked="true"
+            android:icon="@drawable/ic_home"
+            android:title="@string/text_CGLOHAS" />
+
+        <item
+            android:id="@+id/MemberCenter"
+            android:checked="true"
+            android:visible="false"
+            android:title="@string/MemberCenter"
+            android:icon="@drawable/ic_register"/>
+        <item
+            android:id="@+id/Login"
+            android:checked="true"
+            android:visible="false"
+            android:title="Login"
+            android:icon="@drawable/ic_login"/>
+        <item
+            android:id="@+id/RegisterNow"
+            android:checked="true"
+            android:visible="false"
+            android:title="@string/RegisterNow"
+            android:icon="@drawable/ic_register"/>
+
+
+        <item
+            android:id="@+id/item_Items"
+            android:icon="@drawable/ic_shopping"
+            android:title="@string/text_Items" />
+
+        <item
+            android:id="@+id/item_Recipes"
+            android:icon="@drawable/ic_recipe"
+           android:title="@string/text_Recipes" />
+
+
+        <item
+            android:id="@+id/drawer_Shops"
+            android:icon="@drawable/ic_shop"
+            android:title="@string/text_Shops" />
+
+        <item
+            android:id="@+id/LogOut"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/text_Logout"
+            android:visible="false"/>
+
+    </group>
+</menu>

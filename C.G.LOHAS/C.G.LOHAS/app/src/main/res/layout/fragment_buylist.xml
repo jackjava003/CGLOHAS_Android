@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/loginMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You are not Login yet！"
+        android:textSize="18sp"/>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/loginMessage"
+        android:id="@+id/line"
+        />
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/rvBuyList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginMessage"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:id="@+id/totalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#50000000">
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purchased "
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e87e1b"
+            android:text="0"
+            android:textSize="16sp"/>
+
+        <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text=" items, total "
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/totalCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e87e1b"
+            android:text="0"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" , Price "
+            android:textSize="16sp"/>
+
+         <TextView
+             android:id="@+id/TotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#e87e1b"
+                android:text="0"
+             android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" NTD"
+            android:textSize="16sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mid"
+            android:layout_below="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Freight：＄0  Discount：＄"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/buylistdiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Subtotal：＄"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/buylistFinalTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#990000"
+                android:text="0"
+                android:textSize="16sp"
+                />
+
+         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_below="@+id/mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+                <Button
+                    android:id="@+id/submitBuy"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:text="Submit"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/btn_shape"
+                    />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

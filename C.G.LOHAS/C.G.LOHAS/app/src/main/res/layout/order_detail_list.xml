@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_margin="6dp"
+    app:cardBackgroundColor="#EEEEFF"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Ingredient"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/unitPrice"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="Qty"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/itemTotalprice"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/discountItem"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="Disc"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/priceWithoutDiscount"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Subtotal"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
